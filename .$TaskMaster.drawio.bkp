@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Seite-1" id="_koErosqbrijwyusV5Hh">
+    <mxGraphModel dx="2377" dy="1402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nRAyySOtik3wZMy7_4Og-2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="1920" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-3" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;whiteSpace=wrap;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-2">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-4" value="https://TaskMaster.com/user_name/project_name" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-2">
+          <mxGeometry x="130" y="60" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-5" value="" style="swimlane;shape=mxgraph.bootstrap.anchor;strokeColor=#999999;fillColor=#ffffff;fontColor=#666666;childLayout=stackLayout;horizontal=0;startSize=0;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-2">
+          <mxGeometry x="1320" y="160" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-7" value="Teilnehmer&lt;div&gt;--&amp;gt;Profil-Teilnehmer&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-5">
+          <mxGeometry width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-8" value="Filter&lt;div&gt;--&amp;gt;Fälligkeit, Erledigt/Offen/Bearbeitung,&lt;/div&gt;&lt;div&gt;Teilnehmer&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-5">
+          <mxGeometry x="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-9" value="Sichtbarkeit&lt;div&gt;--&amp;gt;privat, public&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-5">
+          <mxGeometry x="300" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-10" value="Invite&lt;div&gt;--&amp;gt;Neue Teilnehmer einladen&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-5">
+          <mxGeometry x="410" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-11" value="...&lt;div&gt;-&amp;gt;Menü&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-5">
+          <mxGeometry x="500" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-14" value="" style="swimlane;shape=mxgraph.bootstrap.anchor;strokeColor=#999999;fillColor=#ffffff;fontColor=#666666;childLayout=stackLayout;horizontal=0;startSize=0;horizontalStack=1;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-2">
+          <mxGeometry x="1620" y="120" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-18" value="Benachrichtigungen&lt;div&gt;--&amp;gt;Welche Benachritigungen per Mail?&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-14">
+          <mxGeometry width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-19" value="Hilfe&lt;div&gt;--&amp;gt;FAQ&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-14">
+          <mxGeometry x="110" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-20" value="Benutzername&lt;div&gt;--&amp;gt;Profil&lt;/div&gt;" style="text;strokeColor=inherit;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fillColor=inherit;fontColor=inherit;fontSize=17;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-14">
+          <mxGeometry x="200" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-22" value="Search" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;whiteSpace=wrap;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-2">
+          <mxGeometry x="710" y="120" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nRAyySOtik3wZMy7_4Og-23" value="Projekt TaskMaster" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="nRAyySOtik3wZMy7_4Og-2">
+          <mxGeometry x="10" y="160" width="190" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
