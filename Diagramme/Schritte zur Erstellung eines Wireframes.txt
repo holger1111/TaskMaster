@@ -1,0 +1,59 @@
+Schritte zur Erstellung eines Wireframes
+Ein Wireframe ist eine Low-Fidelity-Darstellung der Benutzeroberfläche, die den Strukturentwurf ohne visuelle Details zeigt. Es dient dazu, Layout, Informationshierarchie und Platzierung von Elementen zu planen.
+
+1. Ziel und Kontext festlegen
+Definiere den Zweck der Seite oder Anwendung (z. B. „Homepage“, „Registrierungsformular“) und den Nutzerkontext (Desktop, Tablet, Mobile).
+
+2. Informationsarchitektur skizzieren
+Sammle die wichtigsten Inhalte und Funktionen (Navigation, Haupt- und Unternavigation, Content-Bereiche). Ordne diese in logischer Reihenfolge nach Priorität.
+
+3. Layout-Grundgerüst zeichnen
+
+Verwende einfache Rechtecke, Linien und Platzhaltertexte („Lorem Ipsum“)
+
+Zeichne Kopfbereich (Header), Hauptbereich und Fußbereich (Footer)
+
+Plane Seitenleisten, Menüs und Widgets ein
+
+4. Platzhalter für UI-Elemente
+
+Buttons als Rechtecke mit Beschriftung „Button“
+
+Formulareingaben als leere Felder
+
+Bilder als leere Boxen mit „X“-Markierung
+
+Texte als Linienbündel
+
+5. Navigationsstruktur definieren
+Zeige Hauptnavigation und mögliche Drop-Down-Menüs. Kennzeichne, welche Elemente klickbar sind.
+
+6. Interaktionen grob darstellen
+Markiere grundlegende Interaktionen:
+
+Links
+
+Buttons
+
+Formularfelder
+
+Modale Fenster (als separate Wireframe-Versionen)
+
+7. Layout-Varianten prüfen (optional)
+Erstelle Alternativen (A/B-Layouts) für besondere Bereiche wie Header oder Content-Blöcke, um Strukturentscheidungen zu validieren.
+
+8. Feedback und Iteration
+
+Präsentiere Wireframe an Stakeholder für erste Rückmeldungen
+
+Passe Struktur, Anordnung und Priorität der Inhalte an
+
+Halte Änderungen minimal, um Fokus auf Layout zu bewahren
+
+9. Annotieren und Dokumentieren
+Füge kurze Notizen hinzu (z. B. „Search Field“, „User Menu”) und verlinke zu Use Cases oder User Stories.
+
+10. Übergang zum Mockup
+Nutze das verifizierte Wireframe als Grundlage für das High-Fidelity-Design (Mockup), indem du visuelle Styles, Farben und Typografie anwendest.
+
+Mit diesem Vorgehen entsteht ein klares Wireframe, das als Grundgerüst für das UI-Design dient und den Dialog über Informationsstruktur und Nutzerführung erleichtert.

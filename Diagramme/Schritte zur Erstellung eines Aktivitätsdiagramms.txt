@@ -1,0 +1,42 @@
+Schritte zur Erstellung eines Aktivitätsdiagramms
+Ein Aktivitätsdiagramm visualisiert die Abläufe und Workflows eines Systems oder Prozesses. Es zeigt, welche Aktionen nacheinander oder parallel ausgeführt werden, wie Entscheidungen getroffen werden und wann einzelne Pfade zusammenlaufen. Die Erstellung erfolgt in mehreren Phasen:
+
+1. Ziel und Umfang festlegen
+Definiere klar, welchen Prozessabschnitt oder Use-Case das Diagramm abbildet. Lege den Einstiegspunkt und das erwartete Ergebnis fest.
+Beispiel: „Registrierungsprozess eines neuen Nutzers“.
+
+2. Aktivitäten und Aktionen identifizieren
+Sammle alle einzelnen Schritte (Aktivitäten), die im Prozessablauf vorkommen. Formuliere sie als Verben oder Verb-Objekt-Konstruktionen (z. B. “Formular anzeigen”, “Daten validieren”, “Bestätigungs-E-Mail senden”).
+
+3. Steuerungsflüsse skizzieren
+Zeichne die Reihenfolge der Aktivitäten mit Pfeilen (Kontrollflüssen), die den Ablauf von einer Aktion zur nächsten darstellen. Beginne mit einem Startknoten (gefüllter Kreis) und enden mit einem Endknoten (gefüllter Kreis mit Ring).
+
+4. Entscheidungen modellieren
+Füge Entscheidungsknoten (Raute) ein, wo der Ablauf verzweigt. Beschrifte die ausgehenden Flüsse mit Bedingungen (z. B. [gültig], [ungültig]). So wird klar, welcher Pfad bei welchen Voraussetzungen genommen wird.
+
+5. Zusammenführung (Merge) und Synchronisation
+
+Merge-Knoten (Raute) vereinigen Flüsse nach vorherigen Verzweigungen.
+
+Fork-/Join-Knoten (dicker Balken) zeigen parallele Aktivitäten: Ein Fork teilt den Fluss auf, ein Join führt ihn wieder zusammen.
+
+6. Swimlanes und Partitionen (optional)
+Teile das Diagramm in senkrechte oder waagerechte Spalten auf, um Verantwortlichkeiten darzustellen (z. B. „Nutzer“, „System“, „Datenbank“). So wird sichtbar, wer welche Aktivität ausführt.
+
+7. Objekte und Datenspeicher einbinden (optional)
+Wenn sinnvoll, platziere Objektsymbole (abgerundetes Rechteck mit Objektname) und Datenspeicher (offenes Rechteck), um den Fluss konkreter Daten durch Aktivitäten zu veranschaulichen.
+
+8. Überprüfung und Feinschliff
+
+Prüfe Vollständigkeit: Wurden alle möglichen Pfade erfasst?
+
+Validität der Bedingungen: Sind alle Entscheidungsausgänge abgedeckt und widerspruchsfrei benannt?
+
+Konsistenz: Stimmen Start- und Endpunkte, und ergeben Fork/Join-Paare Sinn?
+
+Lesbarkeit: Sind Swimlanes sinnvoll, und ist das Diagramm übersichtlich?
+
+9. Dokumentation und Kommentierung
+Füge ggf. Anmerkungen (Notizen in eckigem Klammern) hinzu, um spezielle Abläufe oder Randbedingungen zu erläutern. Binde das Diagramm in das Projektdokument ein und verlinke relevante Requirements oder Use Cases.
+
+Durch diese strukturierte Vorgehensweise entsteht ein klares, nachvollziehbares Aktivitätsdiagramm, das Abläufe präzise darstellt und als Grundlage für weitere Design- und Implementierungsschritte dient.

@@ -1,0 +1,49 @@
+Schritte zur Erstellung eines Datenflussdiagramms (DFD)
+Ein Datenflussdiagramm zeigt, wie Informationen in einem System verarbeitet und zwischen Komponenten ausgetauscht werden. Es hilft, Datenströme und Speicherorte zu verstehen und systematische Schnittstellen aufzudecken.
+
+1. Systemkontext definieren
+Zeichne ein Rechteck oder einen Kreis, der das Gesamtsystem repräsentiert, und markiere externe Entitäten (z. B. „Kunde“, „Lieferant“, „Zahlungssystem“) außerhalb. Diese interagieren mit dem System über Datenflüsse.
+
+2. Hauptprozesse identifizieren
+Liste alle wesentlichen Prozesse, die Daten transformieren (z. B. „Bestellung erfassen“, „Rechnung erstellen“). Nummeriere sie (Prozess 1, 2, …) und platziere sie als abgerundete Rechtecke oder Kreise innerhalb des Systems.
+
+3. Datenflüsse festlegen
+Zeichne Pfeile für jede Datenübertragung zwischen Akteuren, Prozessen und Datenspeichern. Beschrifte jeden Pfeil mit dem Datennamen (z. B. „Bestelldaten“, „Zahlungsbestätigung“).
+
+4. Datenspeicher definieren
+Zeichne Datenspeicher als offene Rechtecke oder parallele Linien (z. B. „Kundendatenbank“, „Bestellarchiv“). Verbinde sie mit Prozessen, die lesen oder schreiben, über Datenflüsse.
+
+5. Externe Entitäten verknüpfen
+Stelle dar, welche Daten externe Entitäten senden und empfangen. Diese Pfeile zeigen die Interaktionen des Systems mit der Außenwelt.
+
+6. Detaillierungsstufen (DFD-Level) erstellen
+
+Level 0 (Kontextdiagramm): Ein einzelner Prozess repräsentiert das gesamte System mit allen externen Entitäten.
+
+Level 1: Zerlege den Hauptprozess in Teilprozesse und detaillierte Datenflüsse.
+
+Level 2+: Weitergehende Dekomposition einzelner Prozesse, falls nötig für komplexe Abläufe.
+
+7. Konsistenz und Vollständigkeit prüfen
+
+Jeder Datenfluss muss von einer Quelle zu einem Senkenziel führen.
+
+Prozesse dürfen keine isolierten Datenflüsse haben (mindestens ein Eingang und ein Ausgang).
+
+Datenspeicher müssen durch Prozesse befüllt und entnommen werden.
+
+8. Parallelität und Synchronisation (optional)
+Wenn Prozesse parallel ablaufen oder synchronisiert werden müssen, kennzeichne dies durch getrennte Pfade oder Annotationen.
+
+9. Lesbarkeit und Layout optimieren
+
+Halte das Diagramm übersichtlich: Vermeide überlappende Pfeile und zu enge Platzierung.
+
+Ordne Prozesse thematisch oder nach Ablauf an.
+
+Nutze unterschiedliche Farben oder Linientypen (gestrichelt/durchgezogen) für verschiedene Datenkategorien.
+
+10. Dokumentation und Verlinkung
+Füge Legenden hinzu, um Symbole zu erklären. Verweise auf Datenkataloge oder Prozessbeschreibungen für ausführliche Details.
+
+Mit dieser strukturierten Vorgehensweise entsteht ein klares DFD, das Datenflüsse, Prozesse und Speicher transparent macht und als Basis für Systemdesign und Schnittstellendefinition dient.

@@ -1,0 +1,47 @@
+Schritte zur Erstellung einer EPK (Ereignisgesteuerte Prozesskette)
+Ein EPK-Diagramm stellt Geschäftsprozesse als Abfolge von Ereignissen, Funktionen und deren Verknüpfungen dar. Es visualisiert, welche Ereignisse welche Aktivitäten auslösen und welche nachgelagerten Ereignisse entstehen.
+
+1. Prozessziel und -grenze festlegen
+Definiere den Start- und Endpunkt des Prozesses. Lege fest, welchen Teilprozess du modellieren möchtest (z. B. „Bestellung bearbeiten“).
+
+2. Ereignisse identifizieren
+Sammle alle relevanten Ereignisse, die den Prozess auslösen oder abschließen. Ereignisse sind Zustandswechsel oder Auslöser (z. B. Angebot erhalten, Zahlung eingegangen). Zeichne sie als Sechsecke.
+
+3. Funktionen festlegen
+Ermittle alle Prozessschritte (Funktionen), die zwischen Ereignissen ausgeführt werden (z. B. Angebot prüfen, Rechnung erstellen). Zeichne sie als abgerundete Rechtecke.
+
+4. Ereignis-Funktions-Verknüpfungen zeichnen
+Ordne abwechselnd Ereignisse und Funktionen an und verbinde sie mit Pfeilen. Jeder Funktionsausgang führt zu einem Folgeereignis und umgekehrt.
+
+5. Prozesspfade verzweigen und zusammenführen
+
+XOR (exklusiv): Entscheidungspunkte, bei denen nur einer von mehreren Pfaden ausgeführt wird.
+
+AND (parallel): Verzweigungen, bei denen mehrere Funktionen gleichzeitig ablaufen können, und Joins, bei denen sie wieder zusammengeführt werden.
+
+Kennzeichne Verzweigungen mit entsprechenden Konnektoren (Diamanten).
+
+6. Organisationseinheiten und Ressourcen (optional)
+Füge Organisationsblöcke (z. B. Abteilungen) hinzu, um zu zeigen, wer welche Funktion ausführt. Platziere diese als Rahmen oder Swimlanes.
+
+7. Informationsobjekte und Systeme einbinden
+Zeige Datenobjekte oder Informationsflüsse zwischen Funktionen, wenn dies für das Verständnis wichtig ist (z. B. Kundendaten, Bestelldaten).
+
+8. Ereignistypen und Notationen überprüfen
+
+Unterscheide zwischen Startereignissen und Zwischenergebnissen.
+
+Nutze Farbcodierung oder Symbole, um manuelle, automatische und zeitgesteuerte Funktionen/Ereignisse hervorzuheben.
+
+9. Konsistenz und Vollständigkeit prüfen
+
+Jeder Funktionsschritt muss von einem auslösendem und einem resultierenden Ereignis umgeben sein.
+
+Verzweigungen und Joins müssen logisch zusammenpassen.
+
+Der Prozessfluss darf keine toten Enden (isolierte Elemente) haben.
+
+10. Dokumentation und Detaillierung
+Füge Anmerkungen hinzu, um Ausnahmeregelungen oder besondere Verhaltensweisen zu erläutern. Verlinke auf ausführliche Prozessbeschreibungen oder SOPs.
+
+Mit dieser Methode erhältst du eine übersichtliche EPK, die sowohl Verantwortlichkeiten als auch Ablauflogik transparent darstellt und als Grundlage für Prozessoptimierung und Automatisierung dient.

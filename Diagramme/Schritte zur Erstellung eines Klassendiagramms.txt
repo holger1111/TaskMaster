@@ -1,0 +1,60 @@
+Schritte zur Erstellung eines Klassendiagramms
+Ein Klassendiagramm zeigt die statische Struktur eines objektorientierten Systems. Es beschreibt Klassen mit ihren Attributen, Methoden und die Beziehungen zwischen ihnen.
+
+1. Systemgrenze und Anwendungsbereich definieren
+Bestimme, welchen Teil des Softwaresystems du modellieren möchtest (z. B. „Bestellsystem“). Lege fest, welche Funktionen und Komponenten abgedeckt werden.
+
+2. Klassen identifizieren
+Ermittle die relevanten Objekte oder Konzepte aus dem Use-Case- und ER-Diagramm (z. B. Kunde, Bestellung, Produkt). Zeichne jede Klasse als Rechteck.
+
+3. Attribute hinzufügen
+Liste innerhalb jeder Klasse die Eigenschaften auf (z. B. kundenId: int, name: String). Gib ggf. Sichtbarkeiten an:
+
++ public
+
+– private
+
+# protected
+
+4. Methoden festlegen
+Notiere die Operationen, die jede Klasse ausführen kann (z. B. bestellungAufgeben(), berechneGesamtpreis(): double). Ergänze Parameter und Rückgabetypen.
+
+5. Beziehungen modellieren
+
+Assoziation: Einfache Linie zwischen Klassen, ggf. mit Rollennamen und Kardinalitäten (z. B. 1..*).
+
+Aggregation: Leere Raute an der Aggregat-Klasse für „Ganz-Ganzes“-Beziehung (z. B. Warenkorb aggregiert Produkt).
+
+Komposition: Gefüllte Raute für starke Teil-Ganzes-Beziehung (z. B. Bestellung besteht aus Bestellpositionen).
+
+Vererbung (Generalisation): Linie mit leerer Pfeilspitze von Unterklasse zur Oberklasse.
+
+6. Abhängigkeiten darstellen
+Zeichne gestrichelte Linien mit Pfeil, wenn eine Klasse vorübergehend eine andere nutzt oder referenziert (z. B. Rechnungsdrucker hängt von Bestellung ab).
+
+7. Sichtbarkeiten und Eigenschaften ergänzen
+
+Markiere statische Attribute/Methoden durch Unterstreichung.
+
+Zeige abstrakte Klassen und Methoden kursiv oder mit {abstract}.
+
+8. Überprüfung und Validierung
+
+Prüfe, ob alle Klassen korrespondieren zu Entitäten und Use Cases.
+
+Stelle sicher, dass Methodenbedarfe aus Verhaltensdiagrammen abgedeckt werden.
+
+Validere Kardinalitäten und Rollenbezeichnungen.
+
+9. Layout und Lesbarkeit optimieren
+
+Ordne Klassen nach Paketen oder Modulen.
+
+Vermeide überlappende Linien.
+
+Gruppiere verwandte Klassen nahe beieinander.
+
+10. Dokumentation und Verlinkung
+Füge Legenden für Symbole hinzu. Verweise auf detaillierte Klassenspezifikationen und Quellcode-Module.
+
+Durch diese Schritte entsteht ein klares Klassendiagramm, das als Blaupause für die Implementierung in objektorientierten Programmiersprachen dient.

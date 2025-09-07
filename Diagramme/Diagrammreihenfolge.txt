@@ -1,0 +1,23 @@
+1. Wireframe
+Grobe Skizze der Benutzeroberfläche, ohne visuelles Design. Legt Struktur und Platzierung fest
+
+2. Mockup
+Feingliedriges UI-Layout mit Farben und Typografie. Konkrete Bedienoberfläche
+
+3. Aktivitätsdiagramm
+Übersetzt den Nutzer- und Systemfluss aus dem Mockup in formale Prozessschritte. Zeigt Abläufe, Verzweigungen und Schleifen
+
+4. Use-Case-Diagramm
+Stellt die Akteure und deren Anwendungsfälle dar. Verbindet Anforderungen mit Rollen
+
+5. Datenflussdiagramm
+Visualisiert, wie Daten durch die Systemkomponenten fließen. Identifiziert Schnittstellen und Prozesse
+
+6. Entity-Relation-Diagramm
+Definiert das konzeptuelle Datenmodell: Entitäten, Attribute und Beziehungen
+
+7. Klassendiagramm
+Übersetzt das ER-Modell in objektorientierte Klassen mit Methoden und Beziehungen. Zeigt technische Struktur
+
+8. EPK
+Vertieft komplexe Geschäftsprozesse mit Ereignissen, Funktionen und organisatorischen Einheiten. Ideal für detaillierte Prozessanalyse

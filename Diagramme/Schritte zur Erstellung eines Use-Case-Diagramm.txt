@@ -1,0 +1,48 @@
+Schritte zur Erstellung eines Use-Case-Diagramms
+Ein Use-Case-Diagramm stellt die funktionalen Anforderungen eines Systems dar, indem es zeigt, welche Anwendungsfälle (Use Cases) von welchen Akteuren genutzt werden. Es dient der klaren Kommunikation zwischen Fachbereich und Entwicklungsteam.
+
+1. Systemgrenze festlegen
+Zeichne ein Rechteck, das das zu betrachtende System symbolisiert. Alles, was innerhalb dieses Rechtecks liegt, gehört zum System; alles außerhalb sind externe Akteure oder Systeme.
+
+2. Akteure identifizieren
+Bestimme alle externen Nutzer oder Systeme, die mit deinem System interagieren. Platziere sie als Strichmännchen außerhalb der Systemgrenze. Akteure können Menschen (z. B. „Kunde“, „Administrator“) oder andere Systeme (z. B. „Zahlungsdienst“) sein.
+
+3. Use Cases sammeln
+Ermittle alle wichtigen Funktionen oder Geschäftsvorfälle, die das System für die Akteure bereitstellen muss. Notiere sie als ovale Formen innerhalb der Systemgrenze und benenne sie mit kurzen, aussagekräftigen Verben (z. B. „Bestellung aufgeben“, „Rechnung erstellen“).
+
+4. Beziehungen darstellen
+
+Assoziation (Linie): Verbindet Akteur und Use Case, um zu zeigen, wer welchen Use Case nutzt.
+
+Include-Beziehung («include»): Zeichne eine gestrichelte Linie mit offenem Pfeil und dem Label «include», wenn ein Use Case immer einen anderen ausführt (z. B. „Bezahlinformationen prüfen“ wird in „Bestellung aufgeben“ einbezogen).
+
+Extend-Beziehung («extend»): Nutze eine gestrichelte Linie mit offenem Pfeil und dem Label «extend», wenn ein Use Case optional oder unter bestimmten Bedingungen hinzugefügt wird (z. B. „Rabatt anwenden“ erweitert „Bestellung aufgeben“).
+
+Generalisation: Verwende einen Linien-Pfeil mit leerer Spitze, um Spezialisierungen zwischen Akteuren oder Use Cases darzustellen (z. B. „Premiumkunde“ ist eine Spezialisierung von „Kunde“).
+
+5. Systemausnahmen modellieren
+Wenn Ausnahmen oder alternative Abläufe existieren, zeige diese als separate Use Cases mit Extend-Beziehungen an (z. B. „Fehlerbehandlung bei Zahlung“).
+
+6. Prioritäten und Szenarien markieren
+Kennzeichne kritische oder häufig genutzte Use Cases durch Farb- oder Nummernmarkierung, damit Stakeholder schnell die wichtigsten Funktionen erkennen.
+
+7. Überprüfung und Validierung
+
+Vergleiche mit Lasten- und Pflichtenheft: Stimmen alle Anforderungen überein?
+
+Konsistenz prüfen: Hat jeder Use Case mindestens einen Akteur und sind alle Beziehungen korrekt verbunden?
+
+Vollständigkeit sicherstellen: Wurden alle relevanten Funktionen und Ausnahmen erfasst?
+
+8. Lesbarkeit und Layout optimieren
+
+Gruppiere Use Cases thematisch oder nach Modulen.
+
+Vermeide überkreuzende Linien und sorge für ausreichend Abstand.
+
+Platziere häufig genutzte Use Cases zentral, Spezialfälle eher am Rand.
+
+9. Dokumentation und Verlinkung
+Verweise im Diagramm auf detaillierte Beschreibungen in Textform (z. B. Use-Case-Spezifikation). Füge Legenden oder Anmerkungen hinzu, um spezielle Bedingungen oder Rahmenbedingungen zu erläutern.
+
+Durch dieses strukturierte Vorgehen entsteht ein klar verständliches Use-Case-Diagramm, das die Anforderungen und Interaktionen in deinem System übersichtlich darstellt und als Grundlage für die Detailplanung dient.

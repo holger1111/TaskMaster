@@ -1,0 +1,66 @@
+Schritte zur Erstellung eines Mockups
+Ein Mockup ist eine visuelle Darstellung der Benutzeroberfläche mit Detailgrad in Layout, Typografie und Farben. Es liegt zwischen Wireframe (low-fidelity) und Prototyp (interactive, high-fidelity) und hilft, das spätere Design zu validieren.
+
+1. Grundlage: Wireframe übernehmen
+Beginne mit dem zuvor erstellten Wireframe. Übernehme Struktur, Platzierung von Navigationselementen, Formularfeldern und Inhaltspanels als Gerüst.
+
+2. Design-Richtlinien anwenden
+Nutze bestehende Styleguides oder Designsysteme (Farben, Typografie, Abstände, Icons). Lege fest:
+
+Primär- und Sekundärfarben
+
+Schriftfamilien und -größen
+
+Buttons, Eingabefelder, Icons
+
+3. Layout verfeinern
+
+Positioniere Textblöcke, Grafiken und Bedienelemente präzise mit Abständen und Ausrichtungen.
+
+Setze Raster- oder Grid-Systeme ein, um Konsistenz zu gewährleisten.
+
+4. Typografie und Lesbarkeit
+
+Wähle Schriftgröße und Zeilenhöhe so, dass Texte gut lesbar sind.
+
+Unterscheide Überschriften, Fließtexte und Beschriftungen durch Hierarchie (H1–H6, Body, Caption).
+
+5. Farben und Bilder einfügen
+
+Füge tatsächliche Farben aus Marken- oder UI-Designvorgaben ein.
+
+Integriere Placeholder-Grafiken oder echte Bilder in korrektem Seitenverhältnis.
+
+Achte auf ausreichenden Kontrast für Barrierefreiheit.
+
+6. Interaktive Elemente visualisieren
+
+Kennzeichne Buttons, Links und Formulareingaben deutlich.
+
+Zeige Zustände (Hover, Disabled, Active) z. B. durch Farbübergänge oder Schattierungen.
+
+7. Komponentenspezifikation dokumentieren
+
+Halte in Kommentaren oder Legenden fest, welche UI-Komponenten (z. B. Button-Varianten, Input-Felder) genutzt werden.
+
+Verweise auf Code-Komponentenbibliotheken oder Designsystem-Assets.
+
+8. Feedback-Schleifen einplanen
+
+Präsentation des Mockups an Stakeholder und Nutzer: Sammle Anmerkungen zu Usability, Branding und Design.
+
+Überarbeite basierend auf Feedback Farben, Abstände oder Textinhalte.
+
+9. Zustände und Variationen darstellen
+
+Erstelle zusätzliche Mockups für unterschiedliche Bildschirmgrößen (Responsive Design)
+
+Zeige alternative Screens (Error-States, Leerzustände, Modals).
+
+10. Übergang zu Prototyping oder Entwicklung
+
+Exportiere Mockup-Elemente als Assets (SVG, PNG) und markiere Spezifikationen (Abmessungen, Farben, Schriftwerte).
+
+Bereitstellung für Entwickler oder Import in Prototyping-Tools (z. B. Figma, Adobe XD) zur Interaktivitäts-Definition.
+
+Durch diese Schritte entsteht ein high-fidelity Mockup, das realistische Einblicke in das zukünftige UI-Design gibt, frühzeitig Abstimmung ermöglicht und als Basis für Prototyp-Entwicklung und Implementierung dient.

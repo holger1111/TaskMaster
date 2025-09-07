@@ -1,0 +1,50 @@
+Schritte zur Erstellung eines Entity-Relation-Diagramms (ERD)
+Ein Entity-Relation-Diagramm (ERD) stellt das Datenmodell eines Systems dar, indem es Entitäten, deren Attribute und die Beziehungen zwischen ihnen visualisiert. Es bildet die Grundlage für das relationale Datenbankdesign.
+
+1. Anwendungsbereich und Ziel definieren
+Lege fest, welcher Teilbereich der Domäne modelliert werden soll (z. B. „Bestellsystem“, „Kundenverwaltung“). Bestimme Umfang und Zweck des ERDs.
+
+2. Entitäten identifizieren
+Ermittle die wichtigsten Objekte oder Konzepte, über die Daten gespeichert werden müssen. Nenne jede Entität mit einem Substantiv (z. B. Kunde, Bestellung, Produkt). Zeichne sie als Rechtecke.
+
+3. Attribute festlegen
+Liste zu jeder Entität die relevanten Eigenschaften auf. Zeichne sie als Ovale, die von der jeweiligen Entität ausgehen. Markiere Primärschlüssel (z. B. Kunden-ID) durch Unterstreichung oder spezielle Kennzeichnung.
+
+4. Beziehungen definieren
+Zeichne Linien zwischen Entitäten, um Beziehungen darzustellen. Beschrifte jede Beziehung mit einem Verb oder einer kurzen Phrase (z. B. „gibt auf“, „enthält“).
+
+5. Kardinalitäten festlegen
+Gib für jede Seite der Beziehung an, wie viele Instanzen an der Beziehung beteiligt sein können:
+
+1:1 (eins zu eins)
+
+1:N (eins zu viele)
+
+N:M (viele zu viele)
+
+Kennzeichne dies mit Symbolen (z. B. „1“, „∞“) oder Crow’s-Foot-Notation.
+
+6. Optionalitätsregeln einfügen
+Bestimme, ob Beziehungen zwingend (mandatory) oder optional sind. Markiere optionalisierte Enden durch einen Kreis oder „0“.
+
+7. Normalisierung prüfen
+Stelle sicher, dass das Modell den Normalisierungsregeln entspricht (bis mind. 3. Normalform), um Redundanzen zu vermeiden und Dateninkonsistenzen zu minimieren.
+
+8. Verfeinerung und Detaillierung
+
+Unterteile N:M-Beziehungen in Zwischentabellen mit eigenen Primärschlüsseln, falls nötig.
+
+Füge zusammengesetzte oder abgeleitete Attribute hinzu, wenn sie im Design benötigt werden.
+
+9. Konsistenz und Vollständigkeit prüfen
+
+Jeder Primärschlüssel ist eindeutig und jede Beziehung korrekt beschriftet.
+
+Es gibt keine isolierten Entitäten ohne Beziehungen.
+
+Die Kardinalitäten und Optionalitäten passen zu den fachlichen Anforderungen.
+
+10. Dokumentation und Verlinkung
+Füge Legenden hinzu, um Notationskonventionen (z. B. Crow’s Foot) zu erklären. Verweise in Textdokumenten auf die Entitäten und Beziehungen mit detaillierten Beschreibungen.
+
+Durch diese strukturierte Vorgehensweise entsteht ein ERD, das das Datenmodell klar darstellt, eine solide Basis für die Datenbankimplementierung liefert und die fachlichen Anforderungen präzise widerspiegelt.
