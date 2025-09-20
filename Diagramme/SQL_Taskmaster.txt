@@ -1,0 +1,211 @@
+CREATE DATABASE IF NOT EXISTS TaskMaster
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE TaskMaster;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+CREATE TABLE Kollegen (
+    AktiverNutzerID    INT            NOT NULL,
+    PassiverNutzerID   INT            NOT NULL,
+    StatusFavoritID    INT            NOT NULL,
+    StatusKollegeID    INT            NOT NULL,
+    PRIMARY KEY (AktiverNutzerID, PassiverNutzerID),
+    FOREIGN KEY (AktiverNutzerID)  REFERENCES Nutzer(NutzerID),
+    FOREIGN KEY (PassiverNutzerID) REFERENCES Nutzer(NutzerID),
+    FOREIGN KEY (StatusFavoritID)  REFERENCES Status(StatusID),
+    FOREIGN KEY (StatusKollegeID)  REFERENCES Status(StatusID)
+);
+
+CREATE TABLE Aktivitäten (
+    AktivitätID       INT            NOT NULL AUTO_INCREMENT,
+    TeilnehmerAktivID INT            NOT NULL,
+    TeilnehmerPassivID INT           NULL,
+    ProjektID         INT            NULL,
+    ListeID           INT            NULL,
+    FeldID            INT            NULL,
+    Datum             DATE           NOT NULL,
+    Uhrzeit           TIME           NOT NULL,
+    PRIMARY KEY (AktivitätID),
+    FOREIGN KEY (TeilnehmerAktivID)  REFERENCES Teilnehmer(TeilnehmerID),
+    FOREIGN KEY (TeilnehmerPassivID) REFERENCES Teilnehmer(TeilnehmerID),
+    FOREIGN KEY (ProjektID)          REFERENCES Projekt(ProjektID),
+    FOREIGN KEY (ListeID)            REFERENCES Liste(ListeID),
+    FOREIGN KEY (FeldID)             REFERENCES Feld(FeldID)
+);
+
+CREATE TABLE Nutzer (
+    NutzerID        INT            NOT NULL AUTO_INCREMENT,
+    Benutzername    VARCHAR(100)   NOT NULL,
+    AnzeigeName     VARCHAR(100)   NOT NULL,
+    Passwort        VARCHAR(255)   NOT NULL,
+    StatusID        INT            NOT NULL,
+    SichtbarkeitID  INT            NOT NULL,
+    MailID          INT            NOT NULL,
+    MobilID         INT            NULL,
+    StandortID      INT            NULL,
+    NameID          INT            NULL,
+    ProfilbildID    INT            NULL,
+    PRIMARY KEY (NutzerID),
+    FOREIGN KEY (StatusID)       REFERENCES Status(StatusID),
+    FOREIGN KEY (SichtbarkeitID) REFERENCES Sichtbarkeit(SichtbarkeitID),
+    FOREIGN KEY (MailID)         REFERENCES Mail(MailID),
+    FOREIGN KEY (MobilID)        REFERENCES Mobil(MobilID),
+    FOREIGN KEY (StandortID)     REFERENCES Standort(StandortID),
+    FOREIGN KEY (NameID)         REFERENCES Name(NameID),
+    FOREIGN KEY (ProfilbildID)   REFERENCES Profilbild(ProfilbildID)
+);
+
+CREATE TABLE E_Mail_Adresse (
+    MailID             INT            NOT NULL AUTO_INCREMENT,
+    EMailAdresse       VARCHAR(255)   NOT NULL,
+    AltEMailAdresse    VARCHAR(255)   NULL,
+    SichtbarkeitID     INT            NOT NULL,
+    PRIMARY KEY (MailID),
+    FOREIGN KEY (SichtbarkeitID) REFERENCES Sichtbarkeit(SichtbarkeitID)
+);
+
+CREATE TABLE Mobil_Nummer (
+    MobilID           INT            NOT NULL AUTO_INCREMENT,
+    MobilNummer       VARCHAR(50)    NOT NULL,
+    SichtbarkeitID    INT            NOT NULL,
+    PRIMARY KEY (MobilID),
+    FOREIGN KEY (SichtbarkeitID) REFERENCES Sichtbarkeit(SichtbarkeitID)
+);
+
+CREATE TABLE Name (
+    NameID         INT            NOT NULL AUTO_INCREMENT,
+    Name           VARCHAR(255)   NOT NULL,
+    SichtbarkeitID INT            NOT NULL,
+    PRIMARY KEY (NameID),
+    FOREIGN KEY (SichtbarkeitID) REFERENCES Sichtbarkeit(SichtbarkeitID)
+);
+
+CREATE TABLE Profilbild (
+    ProfilbildID     INT            NOT NULL AUTO_INCREMENT,
+    Dateipfad        VARCHAR(500)   NOT NULL,
+    SichtbarkeitID   INT            NOT NULL,
+    PRIMARY KEY (ProfilbildID),
+    FOREIGN KEY (SichtbarkeitID) REFERENCES Sichtbarkeit(SichtbarkeitID)
+);
+
+CREATE TABLE Feld (
+    FeldID            INT            NOT NULL AUTO_INCREMENT,
+    ListeID           INT            NOT NULL,
+    TeilnehmerFeldID      INT            NULL,
+    Feldname          VARCHAR(255)   NOT NULL,
+    Datum             DATE           NULL,
+    Kommentar         TEXT           NULL,
+    StatusID          INT            NULL,
+    PRIMARY KEY (FeldID),
+    FOREIGN KEY (ListeID)      REFERENCES Liste(ListeID),
+    FOREIGN KEY (TeilnehmerFeldID      ) REFERENCES Teilnehmer_Feld(TeilnehmerFeldID      ),
+    FOREIGN KEY (StatusID)     REFERENCES Status(StatusID)
+);
+
+CREATE TABLE Projekt (
+    ProjektID            INT            NOT NULL AUTO_INCREMENT,
+    LeiterID             INT            NOT NULL,
+    TeilnehmerProjektID  INT            NULL,
+    Projektname          VARCHAR(255)   NOT NULL,
+    StatusID             INT            NULL,
+    SichtbarkeitID       INT            NOT NULL,
+    PRIMARY KEY (ProjektID),
+    FOREIGN KEY (LeiterID)            REFERENCES Nutzer(NutzerID),
+    FOREIGN KEY (TeilnehmerProjektID) REFERENCES Teilnehmer_Projekt(TeilnehmerProjektID),
+    FOREIGN KEY (StatusID)            REFERENCES Status(StatusID),
+    FOREIGN KEY (SichtbarkeitID)      REFERENCES Sichtbarkeit(SichtbarkeitID)
+);
+
+CREATE TABLE Liste (
+    ListeID     INT            NOT NULL AUTO_INCREMENT,
+    ProjektID   INT            NOT NULL,
+    Listenname  VARCHAR(255)   NOT NULL,
+    PRIMARY KEY (ListeID),
+    FOREIGN KEY (ProjektID) REFERENCES Projekt(ProjektID)
+);
+
+CREATE TABLE Standort (
+    StandortID      INT            NOT NULL AUTO_INCREMENT,
+    Standort        VARCHAR(255)   NOT NULL,
+    SichtbarkeitID  INT            NOT NULL,
+    PRIMARY KEY (StandortID),
+    FOREIGN KEY (SichtbarkeitID) REFERENCES Sichtbarkeit(SichtbarkeitID)
+);
+
+CREATE TABLE Beobachtung_Projekte (
+    NutzerID   INT NOT NULL,
+    ProjektID  INT NOT NULL,
+    StatusID   INT NOT NULL,
+    PRIMARY KEY (NutzerID, ProjektID),
+    FOREIGN KEY (NutzerID)  REFERENCES Nutzer(NutzerID),
+    FOREIGN KEY (ProjektID) REFERENCES Projekt(ProjektID),
+    FOREIGN KEY (StatusID)  REFERENCES Status(StatusID)
+);
+
+CREATE TABLE Beobachtung_Felder (
+    NutzerID   INT NOT NULL,
+    FeldID     INT NOT NULL,
+    StatusID   INT NOT NULL,
+    PRIMARY KEY (NutzerID, FeldID),
+    FOREIGN KEY (NutzerID) REFERENCES Nutzer(NutzerID),
+    FOREIGN KEY (FeldID)   REFERENCES Feld(FeldID),
+    FOREIGN KEY (StatusID) REFERENCES Status(StatusID)
+);
+
+CREATE TABLE Sichtbarkeit (
+    SichtbarkeitID   INT            NOT NULL AUTO_INCREMENT,
+    Bezeichnung      VARCHAR(50)    NOT NULL,
+    PRIMARY KEY (SichtbarkeitID)
+);
+
+INSERT INTO Sichtbarkeit (Bezeichnung) VALUES
+    ('Öffentlich'),
+    ('Kollegen'),
+    ('Privat');
+
+CREATE TABLE Teilnehmer_Projekt (	
+    TeilnehmerProjektID   INT NOT NULL,
+    ProjektID   INT NOT NULL,
+    NutzerID    INT NOT NULL,
+    PRIMARY KEY (TeilnehmerProjektID),
+    FOREIGN KEY (ProjektID) REFERENCES Projekt(ProjektID),
+    FOREIGN KEY (NutzerID)  REFERENCES Nutzer(NutzerID)
+);
+
+CREATE TABLE Teilnehmer_Feld (
+    TeilnehmerFeldID 	INT NOT NULL,
+    FeldID       	INT NOT NULL,
+    StatusID     	INT NOT NULL,
+    PRIMARY KEY (TeilnehmerFeldID),
+    FOREIGN KEY (FeldID)       REFERENCES Feld(FeldID),
+    FOREIGN KEY (StatusID)     REFERENCES Status(StatusID)
+);
+
+CREATE TABLE Status (
+    StatusID      INT            NOT NULL AUTO_INCREMENT,
+    Bezeichnung   VARCHAR(100)   NOT NULL,
+    PRIMARY KEY (StatusID)
+);
+
+INSERT INTO Status (Bezeichnung) VALUES
+    ('Fortschritt'),
+    ('Bearbeitung'),
+    ('Erledigt'),
+    ('Wartend'),
+    ('Abgebrochen'),
+    ('Unbestimmt'),
+    ('Verfügbar'),
+    ('Beschäftigt'),
+    ('Offline'),
+    ('Abwesend'),
+    ('Favorit'),
+    ('nichtFavorit'),
+    ('Kollege'),
+    ('nichtKollege'),
+    ('Angefragt'),
+    ('Beobachtet'),
+    ('nichtBeobachtet');
+
+SET FOREIGN_KEY_CHECKS = 1;
